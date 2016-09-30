@@ -1,0 +1,14 @@
+#!/bin/sh /etc/rc.common
+# bartekww 30.09.2016
+
+START=99
+
+start()
+{
+	/usr/bin/olad -f
+}
+
+stop()
+{
+	killall olad
+}
