@@ -33,7 +33,7 @@ define Package/ola/description
 endef
 
 define Build/Configure
-  $(call Build/Configure/Default,--disable-dependency-tracking --disable-static --disable-slp --disable-root-check --disable-fatal-warnings --disable-unittests)
+  $(call Build/Configure/Default,--disable-dependency-tracking --disable-static --disable-root-check --disable-fatal-warnings --disable-unittests)
 endef
 
 define Build/InstallDev
