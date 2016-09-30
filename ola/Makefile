@@ -32,6 +32,11 @@ define Package/ola/description
   which makes it a perfect fit for low cost Ethernet to DMX gateways.
 endef
 
+define Package/ola/conffiles
+/root/.ola/*
+/etc/ola/*
+endef
+
 define Build/Configure
   $(call Build/Configure/Default,--disable-dependency-tracking --disable-static --disable-root-check --disable-fatal-warnings --disable-unittests)
 endef
