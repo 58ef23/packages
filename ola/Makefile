@@ -21,6 +21,7 @@ define Package/ola
   TITLE:=Open Lighting Architecture
   URL:=http://openlighting.org
   DEPENDS:=+libartnet +protobuf +libmicrohttpd +libusb-1.0 +libuuid +libstdcpp +libpthread +librt +zlib +libncurses
+  MENU:=1
 endef
 
 define Package/ola/description
