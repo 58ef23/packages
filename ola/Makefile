@@ -16,8 +16,8 @@ PKG_BUILD_DEPENDS:=protobuf
 include $(INCLUDE_DIR)/package.mk
 
 define Package/ola
-  SECTION:=ola
-  CATEGORY:=Open Lighting Architecture
+  SECTION:=multimedia
+  CATEGORY:=Multimedia
   TITLE:=Open Lighting Architecture
   URL:=http://openlighting.org
   DEPENDS:=+libartnet +protobuf +libmicrohttpd +libusb-1.0 +libuuid +libstdcpp +libpthread +librt +zlib +libncurses
