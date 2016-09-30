@@ -5,7 +5,7 @@ START=99
 
 start()
 {
-	/usr/bin/olad -f
+	/usr/bin/olad -f -c /etc/ola
 }
 
 stop()
