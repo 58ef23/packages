@@ -4,7 +4,7 @@ PKG_NAME:=olad
 PKG_VERSION:=0.10.2
 PKG_RELEASE:=1
 
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
+PKG_SOURCE:=ola-PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/OpenLightingProject/ola/releases/download/$(PKG_VERSION)
 PKG_FIXUP:=libtool
 PKG_INSTALL:=1
