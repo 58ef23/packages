@@ -1,6 +1,6 @@
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=ola
+PKG_NAME:=olad
 PKG_VERSION:=0.10.2
 PKG_RELEASE:=1
 
@@ -15,16 +15,16 @@ PKG_BUILD_DEPENDS:=protobuf
 
 include $(INCLUDE_DIR)/package.mk
 
-define Package/ola
+define Package/olad
   SECTION:=multimedia
   CATEGORY:=Multimedia
-  TITLE:=Open Lighting Architecture
+  TITLE:=Open Lighting Architecture (bartekww)
   URL:=http://openlighting.org
   DEPENDS:=+libartnet +protobuf +libmicrohttpd +libusb-1.0 +libuuid +libstdcpp +libpthread +librt +zlib +libncurses
   MENU:=1
 endef
 
-define Package/ola/description
+define Package/olad/description
   The Open Lighting Architecture is a framework for lighting control information.
   It supports a range of protocols and over a dozen USB devices. It can run as
   a standalone service, which is useful for converting signals between protocols,
@@ -33,7 +33,7 @@ define Package/ola/description
   which makes it a perfect fit for low cost Ethernet to DMX gateways.
 endef
 
-define Package/ola/conffiles
+define Package/olad/conffiles
 /root/.ola/*
 /etc/ola/*
 endef
@@ -51,7 +51,7 @@ define Build/InstallDev
 	$(CP) $(PKG_INSTALL_DIR)/usr/lib/*.so* $(1)/usr/lib/
 endef
 
-define Package/ola/install
+define Package/olad/install
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(CP) $(PKG_INSTALL_DIR)/usr/bin/* $(1)/usr/bin
 	$(INSTALL_DIR) $(1)/usr/lib/olad
@@ -63,4 +63,4 @@ define Package/ola/install
 	$(INSTALL_BIN) ./files/etc/init.d/olad $(1)/etc/init.d/olad
 endef
 
-$(eval $(call BuildPackage,ola))
+$(eval $(call BuildPackage,olad))

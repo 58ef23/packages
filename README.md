@@ -1,7 +1,7 @@
 # bartekww's packages for OpenWRT/LEDE
 
 Available packages:
-  - OLA (0.10.2)
+  - olad (0.10.2)
 
 ### How to add this repository:
 ```
